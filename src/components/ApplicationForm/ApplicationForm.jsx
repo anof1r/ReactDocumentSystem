@@ -27,6 +27,7 @@ export default function ApplicationForm() {
     const response = await fetch("http://localhost:3001/applications", requestOptions)
     if (!response.ok) {
       setRepeatedRequest(true)
+      setSuccessfulRequest(false)
     } else {
       setSuccessfulRequest(true)
       setRepeatedRequest(false)
