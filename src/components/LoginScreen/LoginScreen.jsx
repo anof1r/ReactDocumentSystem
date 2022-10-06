@@ -26,9 +26,9 @@ function LoginScreen({ setAuth }) {
         <div className={classes.application}>
             <form className={classes.form}>
                 <label htmlFor='login'>Введите логин:</label>
-                <input type="text" onChange={(e) => setLogin(e.target.value)} className={classes.input} />
-                <label htmlFor='login'>Введите пароль:</label>
-                <input type="password" onChange={(e) => setPassword(e.target.value)} className={classes.input} />
+                <input type="text" name="login" onChange={(e) => setLogin(e.target.value)} className={classes.input} />
+                <label htmlFor='password'>Введите пароль:</label>
+                <input type="password" name="pawwsord" onChange={(e) => setPassword(e.target.value)} className={classes.input} />
                 {loginFail && <span style={{ textAlign: "center", color: "red" }}> Пользователя не существует </span>}
                 <button type='button' onClick={() => {
                     isMounted.current = true;
