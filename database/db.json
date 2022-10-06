@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Иванов Иван Иванович",
+      "login": "IvanovI",
+      "password": "fb1b83484d604fecaa515fadd67079ed"
+    },
+    {
+      "id": 2,
+      "name": "Сидоров Сергей Сергеевич",
+      "login": "SidorS",
+      "password": "21adea70e99e3e93f4c925d511b2747d"
+    },
+    {
+      "id": 3,
+      "name": "Петров Павел Платонович",
+      "login": "PlatonPaw",
+      "password": "be55649dafb0bf7b4afdeef329d12692"
+    }
+  ],
+  "applications": [
+    {
+      "id": "fb58e1b4da3e0aca82015ba925eeb5f3",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 321"
+    },
+    {
+      "id": "516829c5f36d49335a9ee48c52bd1761",
+      "user_name": "Сидоров Сергей Сергеевич",
+      "document_name": "ГОСТ 321"
+    },
+    {
+      "id": "9115a84e1e36b5c0e30b2c22afc42ae4",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "ГОСТ 321"
+    },
+    {
+      "id": "a1abb3f001b95b58215ecfbdffc856c0",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "ГОСТ 1"
+    },
+    {
+      "id": "3c5d0a8549c76bbc254156d67d5bc981",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "ГОСТ 98"
+    },
+    {
+      "id": "2a88efee7e64eb2a37fb9d9ff53723ef",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "ГОСТ 1999"
+    },
+    {
+      "id": "0269158528cdef3e742880a5c9f783fa",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "ГОСТ 151"
+    },
+    {
+      "id": "500b17ba48fcca38a65db86c993f7e95",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 10"
+    },
+    {
+      "id": "b39cd3a05369dfa0f29dfd2031a00af3",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 101"
+    },
+    {
+      "id": "6774de16b340d7c8865a4b4d5cebf649",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 999"
+    },
+    {
+      "id": "864d40e4332646504127438058bc1173",
+      "user_name": "Сидоров Сергей Сергеевич",
+      "document_name": "ГОСТ 1999"
+    },
+    {
+      "id": "2a82204ec5265e331935d2599eea80bf",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 1999"
+    },
+    {
+      "id": "6781033b83bb16946b9fe9b45c4169f9",
+      "user_name": "Сидоров Сергей Сергеевич",
+      "document_name": "ГОСТ 999"
+    },
+    {
+      "id": "92790d343732f8d62f7f47e3bbe8472a",
+      "user_name": "Петров Павел Платонович",
+      "document_name": "Гост 455"
+    },
+    {
+      "id": "39f28a36fc12c39d3afdd009a5c9774a",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 322"
+    },
+    {
+      "id": "edb20010790053f4f730cfeba0956fdb",
+      "user_name": "",
+      "document_name": "ГОСТ 322"
+    },
+    {
+      "id": "91548a20d0a635965eace6ff322bdab7",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 987"
+    },
+    {
+      "id": "fcd514ca56ef57a1218e83814b328183",
+      "user_name": "Иванов Иван Иванович",
+      "document_name": "ГОСТ 0"
+    },
+    {
+      "id": "d41d8cd98f00b204e9800998ecf8427e",
+      "user_name": "",
+      "document_name": ""
+    }
+  ]
+}
