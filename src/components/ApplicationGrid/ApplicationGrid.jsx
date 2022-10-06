@@ -5,7 +5,6 @@ import classes from './ApplicationGrid.module.css'
 
 export default function ApplicationGrid() {
   const [applications, setApplications] = useState([])
-  const uniqueApplications = new Set()
 
   useEffect(() => {
     fetch("http://localhost:3001/applications")
@@ -13,37 +12,17 @@ export default function ApplicationGrid() {
       .then(data => setApplications(data))
   }, [])
 
-  const findOccurrence = (arr, key) => {
-    let applicationsArray = [];
-    arr.forEach((i) => {
-      if (applicationsArray.some((value) => {
-        return value[key] == i[key]
-      })) {
-        applicationsArray.forEach((j) => {
-          if (j[key] === i[key]) {
-            j["occurrence"]++
-          }
-        })
-      } else {
-        let tmpObj = {}
-        tmpObj[key] = i[key]
-        tmpObj["occurrence"] = 1
-        applicationsArray.push(tmpObj);
+  const uniqDocs = [...new Set(applications.map(nameDoc => nameDoc.document_name))]
+  const docCounts = uniqDocs.map(
+      doc => {
+          const count = applications.reduce((total, nameDoc) => nameDoc.document_name == doc ? total + 1 : total, 0);
+          return {doc, count};
       }
-    })
-    return applicationsArray
-  }
-
-  findOccurrence(applications, "document_name").forEach((appl => {
-    uniqueApplications.add({
-      "document_name": appl.document_name,
-      "occurance": appl.occurrence
-    })
-  }))
-
-  const sortedListOfApplications = Array.from(uniqueApplications).sort((a, b) => {
-    return b.occurance - a.occurance
+  ).sort((a, b) => {
+    return b.count - a.count
   })
+
+console.log(docCounts)
 
   return (
     <div className="container">
@@ -53,12 +32,12 @@ export default function ApplicationGrid() {
           <div className="col-6">Количество заявок</div>
         </div>
       </div>
-      {sortedListOfApplications.map(application => {
+      {docCounts.map(application => {
         return (
           <Application
-            documentName={application.document_name}
-            countNumber={application.occurance}
-            key={application.document_name}
+            documentName={application.doc}
+            countNumber={application.count}
+            key={application.doc}
           />
         )
       })}
