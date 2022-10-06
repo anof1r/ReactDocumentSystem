@@ -18,3 +18,6 @@ In database passwords sre stored in md5hash so you might need the original to lo
 2) "Сидоров Сергей Сергеевич" - login: SidorS, password: sidorov1998Password,
 3) "Петров Павел Платонович" - login: PlatonPaw, password: PawelP1989Rabota
 
+## Repeated applications validation
+
+Application ID is an md5Hash that consists of user_name and document_name. JsonServer does not allow us to add objects with duplicated id's, so md5Hash is the best solution that I found to protect bd from duplicates.
